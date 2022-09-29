@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <img src="Imágenes/Logo.png" alt="Logo de Alura A">
+    </header>
+
+    <main>
+        <section class="principal">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Escriba su mensaje aquí"></textarea>
+            <div class="aviso" >
+                <img src="Imágenes/Vector.png" alt="signoAviso">
+                <h6>Sin tilde y usando minúsculas</h6>
+            </div>
+
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="secundaria">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <button class="copiar" onclick="btncopiar()">Copiar</button>
+            <h3 id="ningunMensaje">Ningún mensaje fue encontrado</h3>
+            <h5 id="ingresaTexto">Ingresa el texto que quieras encriptar o desencritar</h5>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
